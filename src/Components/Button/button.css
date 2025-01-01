@@ -1,0 +1,36 @@
+.button {
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button.solid {
+  background-color: #ff5733;
+  color: #fff;
+  border: none;
+}
+
+.button.solid:hover {
+  background-color: #e84118;
+}
+
+.button.outline {
+  background-color: transparent;
+  color: #ff5733;
+  border: 2px solid #ff5733;
+}
+
+.button.outline:hover {
+  background-color: #ff5733;
+  color: #fff;
+}
+.button.viewmore{
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #ff5733;
+  border: 2px solid #ff5733;
+}

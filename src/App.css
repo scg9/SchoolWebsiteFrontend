@@ -1,0 +1,222 @@
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+/* Header container */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 192px; 
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  position: sticky; 
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo section */
+.schoollogo img {
+  height: 96px; 
+  width: auto;
+}
+
+/* Navbar */
+.navbar {
+  font-size: 18px; 
+  display: flex;
+  gap: 20px; 
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 400;
+  transition: color 0.3s ease; 
+  font-size: 24px;
+}
+
+.navbar a:hover {
+  color: #ff5733;
+}
+
+/* Header buttons */
+.header-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.header-buttons button {
+  font-size: 24px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease; 
+}
+
+/* Solid button styling */
+.header-buttons .solid {
+  background-color: #ff5733;
+  color: #fff;
+}
+
+.header-buttons .solid:hover {
+  background-color: #e84118; 
+}
+
+/* Outline button styling */
+.header-buttons .outline {
+  background-color: transparent;
+  color: #ff5733;
+  border: 2px solid #ff5733;
+}
+
+.header-buttons .outline:hover {
+  background-color: #ff5733;
+  color: #fff;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .navbar {
+    flex-wrap: wrap; 
+    gap: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .header-buttons {
+    margin-top: 10px;
+    gap: 10px; 
+  }
+}
+
+
+
+/* Hero Section */
+.hero {
+  background: url("./images/background.jpg") no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-content h1 {
+  font-size: 82px;
+  margin-bottom: 10px;
+
+}
+
+.hero-content p {
+  font-size: 28px;
+  width: 915px;
+}
+
+/* Categories Section */
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.category-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.category-button:hover {
+  background: #0056b3;
+}
+
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.event-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.event-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.event-details {
+  padding: 10px;
+}
+
+.event-details h3 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.view-more {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Footer Section */
+.footer {
+  background: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-content h4 {
+  margin-bottom: 10px;
+}
+
+.footer-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-content ul li {
+  margin: 5px 0;
+}
+
+.copyright {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+}
